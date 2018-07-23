@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:27.1.1'
+
+    api 'io.reactivex.rxjava2:rxjava:+'
+    api 'io.reactivex.rxjava2:rxandroid:+'
+
+    api 'com.squareup.okhttp3:okhttp:+'
+    api 'com.github.bumptech.glide:okhttp3-integration:+'
+
+    api 'com.jakewharton:butterknife:+'
+    //主项目需要引用否则有可能加载不到view
+    annotationProcessor 'com.jakewharton:butterknife-compiler:+'
+
+    //处理内存泄露
+    api 'com.trello.rxlifecycle2:rxlifecycle:+'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:+'
+
+    //网络请求
+    api 'com.squareup.retrofit2:retrofit:+'
+    api 'com.squareup.retrofit2:converter-gson:+'
+    api 'com.squareup.retrofit2:converter-scalars:+'
+    api 'com.squareup.retrofit2:adapter-rxjava2:+'
+}
