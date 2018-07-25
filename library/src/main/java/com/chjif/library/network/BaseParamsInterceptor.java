@@ -10,6 +10,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 /**
+ * 用来给每个接口加入基础参数
  * Created by cjf on 2018-07-19 16:09
  */
 

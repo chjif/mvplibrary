@@ -1,6 +1,6 @@
 package com.chjif.library.network;
 
-import com.chjif.library.base.BaseApplication;
+import com.chjif.library.base.BaseApp;
 import com.chjif.library.util.NetworkUtils;
 
 import java.io.IOException;
@@ -53,7 +53,7 @@ public class CachingControlInterceptor {
         @Override
         public Response intercept(Chain chain) throws IOException {
             Request request = chain.request();
-            if (!NetworkUtils.isConnected(BaseApplication.getContext())) {
+            if (!NetworkUtils.isConnected(BaseApp.getContext())) {
                 request = request.newBuilder()
                         .header("Cache-Control", "public, max-stale=" + TIMEOUT_DISCONNECT)
                         .build();
