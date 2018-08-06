@@ -5,21 +5,17 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/bt_jump"
+        android:id="@+id/btn_query"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转" />
+        android:text="查询" />
 
-    <ScrollView
+    <FrameLayout
+        android:id="@+id/frame_lay"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#e9e5e5" />
 
-        <TextView
-            android:id="@+id/tv_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!" />
-    </ScrollView>
 
 </LinearLayout>

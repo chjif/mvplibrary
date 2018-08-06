@@ -50,4 +50,6 @@ dependencies {
     api 'com.squareup.retrofit2:converter-gson:+'
     api 'com.squareup.retrofit2:converter-scalars:+'
     api 'com.squareup.retrofit2:adapter-rxjava2:+'
+
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
 }

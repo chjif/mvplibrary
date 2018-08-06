@@ -9,8 +9,8 @@ public interface SampleContract {
         void showExpress(String result);
     }
 
-    interface Presenter extends BasePresenter {
-
+    abstract class  Presenter extends BasePresenter<View> {
+        public abstract void getExpress();
     }
 }
 
