@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.StringRes;
 import android.widget.Toast;
 
+import com.chjif.library.util.AppManager;
 import com.chjif.library.widget.MyProgressDialog;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
@@ -28,6 +29,7 @@ public abstract class BaseAty<P extends BasePresenter> extends RxAppCompatActivi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppManager.getInstance().addActivity(this);
         if (layoutRes() != 0) {
             setContentView(layoutRes());
             //绑定到butterknife
@@ -91,5 +93,6 @@ public abstract class BaseAty<P extends BasePresenter> extends RxAppCompatActivi
         if (mPresenter != null)
             mPresenter.detachView();//释放资源
         this.mPresenter = null;
+        AppManager.getInstance().removeActivity(this);
     }
 }
