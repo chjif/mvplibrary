@@ -1,0 +1,15 @@
+<resources>
+    <string name="crsh_default_error">Sorry, the program has an exception and is going to quit</string>
+    <string name="crsh_camera_permission_error">Please grant application camera permissions,
+        The program is abnormal and is going to exit.</string>
+    <string name="crsh_record_audio_permission_error">Please grant application microphone permissions,
+        The program is abnormal and is going to exit.</string>
+    <string name="crsh_write_external_storage_permission_error">Please grant application storage permissions,
+        The program is abnormal and is going to exit.</string>
+    <string name="crsh_read_phone_state_permission_error">Please grant application phone permissions,
+        The program is abnormal and is going to exit.</string>
+    <string name="crsh_access_coarse_location_permission_error">Please grant application location permissions,
+        The program is abnormal and is going to exit.</string>
+    <string name="crsh_default_permission_error">Sorry, the program has an exception and is going to quit,
+        Please check the application permissions settings.</string>
+</resources>

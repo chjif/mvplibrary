@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crsh_default_error">很抱歉，程序出现异常，即将退出..</string>
+    <string name="crsh_camera_permission_error">请授予应用相机权限，程序出现异常，即将退出。</string>
+    <string name="crsh_record_audio_permission_error">请授予应用麦克风权限，程序出现异常，即将退出。</string>
+    <string name="crsh_write_external_storage_permission_error">请授予应用存储权限，程序出现异常，即将退出。</string>
+    <string name="crsh_read_phone_state_permission_error">请授予应用电话权限，程序出现异常，即将退出。</string>
+    <string name="crsh_access_coarse_location_permission_error">请授予应用位置信息权，很抱歉，程序出现异常，即将退出。</string>
+    <string name="crsh_default_permission_error">很抱歉，程序出现异常，即将退出，请检查应用权限设置。</string>
+</resources>
