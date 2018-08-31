@@ -20,3 +20,9 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.chjif:mvplibrary:v1.0'
 	}
+Add it in your app build.gradle at the android:
+
+	compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
